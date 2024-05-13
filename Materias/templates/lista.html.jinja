@@ -1,0 +1,18 @@
+{% extends 'base.html.jinja' %}
+
+
+
+{% block content %}
+<h1>{% block title %} Mi lista {% endblock %}</h1>
+    
+
+<ul>
+        {% for element in elementsList %}
+        <li>
+           Nombre: {{ element.nombre }} Apellido: {{ element.apellido }} Cédula de Identidad: {{ element.cedula }} Nombre de la materia: {{ element.materia }} Objetivo de la materia: {{ element.objetivo }} Duración de la materia en horas: {{ element.duracion }} Nota mínima aprobatoria: {{ element.nota }}<a href="/{{element._id}}">Detalle<a/> <a href="/update/{{element._id}}">Modificar<a/> <a href="/delete/{{element._id}}">Eliminar</a>
+        </li>        
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
