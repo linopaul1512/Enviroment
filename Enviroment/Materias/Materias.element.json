@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "663e3fd10d57287587b776b5"
+  },
+  "nombre": "Mama Venezuela",
+  "apellido": "Benavides",
+  "cedula": "20584952",
+  "materia": "Base de datos",
+  "objetivo": "Enseñar",
+  "duracion": "50",
+  "nota": "60"
+}]

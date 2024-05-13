@@ -1,0 +1,58 @@
+{% extends 'base.html.jinja' %}
+
+{% block content %}
+
+    <h1> {% block title %} Modifica la materia {% endblock %}</h1>
+        <form method="POST" Content-Type='application/json'>
+            <div>
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" name="nombre" 
+                placeholder="Nombre"
+                value="{{ element.nombre }}">
+                <br>
+            </div> 
+            <div>
+                <label for="apellido">Apellido: </label><br>
+                <input type="text" name="apellido" 
+                placeholder="Apellido"
+                value="{{ element.apellido }}">
+                <br>
+            </div>
+            <div>
+                <label for="cedula">Cédula: </label><br>
+                <input type="number" name="cedula" 
+                placeholder="Cedula"
+                value="{{ element.cedula }}">
+                <br>
+            </div>
+            <div>
+                <label for="materia">Materia: </label><br>
+                <input type="text" name="materia" 
+                placeholder="Materia"
+                value="{{ element.materia }}">
+                <br>
+            </div>
+            <div>
+                <label for="objetivo">Objetivo: </label><br>
+                <input type="text" name="objetivo" 
+                placeholder="Objetivo"
+                value="{{ element.objetivo }}">
+                <br>
+            </div>
+            <div>
+                <label for="duracion">Duracación en horas: </label><br>
+                <input type="number" name="duracion" 
+                placeholder="Duracion"
+                value="{{ element.duracion }}">
+                <br>
+            </div>
+            <div>
+                <label for="nota">Nota: </label><br>
+                <input type="text" name="nota" 
+                placeholder="Nota"
+                value="{{ element.nota }}">
+                <br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html.jinja' %}
+
+{% block content %}
+<h1>{% block title %} Detalle de contacto {% endblock %}</h1>
+    <ul>
+        <li>
+           Nombre: {{ element.nombre }} 
+           Apellido: {{ element.apellido }} 
+           Cédula de Identidad: {{ element.cedula }} 
+           Nombre de la materia: {{ element.materia }} 
+           Objetivo de la materia: {{ element.objetivo }} 
+           Duración de la materia en horas: {{ element.duracion }} 
+           Nota mínima aprobatoria: {{ element.nota }}</li>
+    </ul>
+{% endblock %}
